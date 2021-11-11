@@ -3,8 +3,6 @@ module.exports = function FruitBasket(pool) {
     async function createFruitBasket(type, qty, price) {
         try {
             await pool.query(`insert into fruit_basket(fruit_type,qty,unit_price) values ($1,$2,$3)`, [type, qty, price]);
-
-            let x = await pool.query('select id from fruit_basket where fruit_type=$1 and qty=$2 and unit_price=$3', [type, qty, price])
         } catch (error) {
             console.log(error);
         }
