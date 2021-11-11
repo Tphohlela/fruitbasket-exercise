@@ -1,0 +1,16 @@
+{
+  "name": "fruit_baskets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fruitbasket.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.1.3",
+    "pg": "^8.7.1"
+  }
+}
