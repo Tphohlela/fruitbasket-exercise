@@ -101,8 +101,6 @@ describe('The fruit basket function', function () {
         await fruit.createFruitBasket('peach', 6, 48.00)
         await fruit.createFruitBasket('peach', 2, 16.00)
 
-        const list = await fruit.getFruitBasketTable()
-
         const baskets = await fruit.getFruitBasketTable();
 
         assert.equal(48.00, await fruit.totalPriceFruitBasket(baskets[1].id))
