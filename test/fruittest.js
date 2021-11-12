@@ -19,9 +19,7 @@ describe('The fruit basket function', function () {
         const fruit = fruitBasket(pool);
         await fruit.createFruitBasket('apple', 1, 11.99)
 
-        const baskets = await fruit.getFruitBasketTable();
-
-       const list = await fruit.getFruitBasketTable()
+        const list = await fruit.getFruitBasketTable()
 
         const listWithNoIds = list.map(basket => {
             delete basket.id;
@@ -42,8 +40,6 @@ describe('The fruit basket function', function () {
         const fruit = fruitBasket(pool);
         await fruit.createFruitBasket('apple', 1, 11.99)
         await fruit.createFruitBasket('peach', 6, 48.00)
-
-        const baskets = await fruit.getFruitBasketTable();
 
         const list = await fruit.getFruitBasketTable()
 
